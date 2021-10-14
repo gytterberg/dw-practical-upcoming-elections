@@ -1,0 +1,10 @@
+<div class='election-results'>
+  <h1>Upcoming elections near you</h1>
+  <p>Results:</p>
+  <ul>
+    {{! map over election results in <li>'s }}
+    {{#each results}}
+      <p>{{this.description}}</p>
+    {{/each}}
+  </ul>
+</div>

@@ -12,6 +12,21 @@ This is a server-side web application written in JavaScript with
 
 ### Dependencies
 
+## Todo
+
+minimum viable product:
+[*] test request for ocd-division/country:us/state:ia/sldl:29
+[*] build out util dir
+[*] process addresses into city and state OCD ids
+[*] fetch election results for given OCD ids
+[] new view for election results
+[] new view for errors
+[] tests for route
+extra features
+[] form verification, at least for city and state
+[] get more elaborate OCD ids
+[] nicer results page
+
 To install the dependencies, run the following command:
 
 ```sh
