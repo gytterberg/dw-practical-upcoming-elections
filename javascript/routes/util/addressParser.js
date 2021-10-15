@@ -2,7 +2,6 @@
 // returns a comma demlimited string of OCD IDs
 
 function addressToOCDs(address) {
-  // have address.street, .street2, .city, .state, .zip
   const street = address.street.toLowerCase().trim().replaceAll(/\s+/g, '_');
   const street2 = address.street.toLowerCase().trim().replaceAll(/\s+/g, '_');
   const city = address.city.toLowerCase().trim().replaceAll(/\s+/g, '_');
@@ -15,7 +14,6 @@ function addressToOCDs(address) {
     results.push(`ocd-division/country:us/state:${state}`);
     results.push(`ocd-division/country:us/state:${state}/place:${city}`);
   }
-
   return results.join(',');
 }
 

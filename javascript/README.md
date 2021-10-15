@@ -1,5 +1,13 @@
 # Democracy Works Practical: Upcoming Elections
 
+Hello, here's my submission.
+
+I've tried to keep my code simple and legible. I believe the basic requirements are met. If I had more time I would first build out more specific tests, and generate more types of OCD IDs from the address input. I left my working todo list at the bottom of this file, to demonstrate my workflow.
+
+Thank you for your consideration!
+
+---
+
 This is a server-side web application written in JavaScript with
 [Express][express] and [Handlebars][handlebars].
 
@@ -12,20 +20,7 @@ This is a server-side web application written in JavaScript with
 
 ### Dependencies
 
-## Todo
-
-minimum viable product:
-[*] test request for ocd-division/country:us/state:ia/sldl:29
-[*] build out util dir
-[*] process addresses into city and state OCD ids
-[*] fetch election results for given OCD ids
-[] new view for election results
-[] new view for errors
-[] tests for route
-extra features
-[] form verification, at least for city and state
-[] get more elaborate OCD ids
-[] nicer results page
+I added two dependencies: axios, to make the API request, and nodemon, to streamline the development workflow.
 
 To install the dependencies, run the following command:
 
@@ -40,7 +35,7 @@ npm install
 To run the application, use the following command:
 
 ```sh
-DEBUG=js-upcoming-elections:* npm start
+DEBUG=js-upcoming-elections:* npm start-dev
 ```
 
 ### Tests
@@ -61,3 +56,19 @@ evaluation and you reaching out will not impact your score.
 [handlebars]: https://handlebarsjs.com/
 [node]: https://nodejs.org/
 [npm]: https://docs.npmjs.com/
+
+## TODOs
+
+minimum viable product:
+[*] test request for ocd-division/country:us/state:ia/sldl:29
+[*] build out util dir
+[*] process addresses into city and state OCD ids
+[*] fetch election results for given OCD ids
+[] tests for route
+[*] new view for election results
+[*] view for errors
+[*] form validation, at least for city and state
+extra features
+[] get more elaborate OCD ids
+[] nicer results page
+[] more tests

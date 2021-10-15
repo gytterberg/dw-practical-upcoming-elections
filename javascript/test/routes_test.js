@@ -22,6 +22,14 @@ async function runAsyncTests() {
     'Rock Hill Mayoral Election',
     'Got Rock Hill Mayoral Election'
   );
+
+  // data = await axios.post('/search', {
+  //   city: 'Boston',
+  //   state: 'MA',
+  // });
+  // console.log('>>>>>>>>>>>>>>>>');
+  // console.log(data);
+  // console.log('>>>>>>>>>>>>>>>>');
 }
 
 runAsyncTests();

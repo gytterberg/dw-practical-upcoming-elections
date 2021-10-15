@@ -1,10 +1,30 @@
 <div class='election-results'>
   <h1>Upcoming elections near you</h1>
-  <p>Results:</p>
-  <ul>
-    {{! map over election results in <li>'s }}
-    {{#each results}}
-      <p>{{this.description}}</p>
-    {{/each}}
-  </ul>
+  {{#if empty}}
+    <p>No results found in your area.</p>
+  {{else}}
+    <p>Results:</p>
+    <ul>
+      {{#each results}}
+        <li>
+          {{this.description}}
+          <ul>
+            <li>
+              <p>Date: {{this.date}}</p>
+            </li>
+            <li>
+              <p>Type: {{this.type}}</p>
+            </li>
+            <li>
+              <p><a href={{this.website}}>Website</a></p>
+            </li>
+            <li>
+              <p><a href={{this.polling-place-url}}>Polling place information</a></p>
+            </li>
+          </ul>
+        </li>
+
+      {{/each}}
+    </ul>
+  {{/if}}
 </div>
